@@ -7,10 +7,13 @@
 html,
 body{
     font-family: Hind,sans-serif;
-    font-size: 16px;
+    
 }
-
+/* .nav-link{
+    color: #35a22c !important;
+} */
 /* HEADER */
+
 header{
     position: absolute;
     top: 0;
@@ -21,3 +24,111 @@ header{
 .navbar-collapse{
     justify-content: end;
 }
+.logo {
+    color: #35a22c;
+    font-size: 40px;
+}
+header .navbar .navbar-toggler {
+   
+    background-color: #35a22c;
+}
+
+header .navbar .navbar-toggler span {
+    color: #35a22c;
+}
+header .menu a{
+    position: relative;
+}
+header .menu a:hover{
+    color: #35a22c!important;
+    transition: all 0.3s linear;
+}
+header .menu a::after{
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #35a22c;
+}
+header .menu a:hover::after{
+    width: 100%;
+    transition:  width 0.3s;
+}
+
+/* CAROUSEL */
+.carousel-section {
+    position: relative;
+}
+.carousel-section .carousel-item img {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+.carousel-section .carousel-caption img.avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    animation: fadeUp 2s;
+}
+
+.carousel-section .carousel-caption h5{
+    /* opacity: 0; */
+    animation: fadeUp 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both; /* giu lai trang thai cuoi animation*/
+}
+
+.carousel-section .carousel-caption p {
+    /* opacity: 0; */
+    animation: fadeUp 2s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+.carousel-section {
+    position: relative;
+    z-index: 1;
+}
+
+
+.carousel-section::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.carousel-indicators {
+    z-index: 6;
+}
+
+
+
+
+.carousel-indicators .btn-indicator {
+   
+    margin: 6px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    transition: all .3s;
+   
+}
+
+.carousel-indicators .btn-indicator.active {
+    background-color: #35a22c ;
+}
+
+.carousel-indicators .btn-indicator:hover {
+    background-color: #35a22c !important;
+}
+
