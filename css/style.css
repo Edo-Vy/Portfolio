@@ -132,6 +132,23 @@ header .menu a:hover::after{
     background-color: #35a22c !important;
 }
 
+/* Project */
+/* /* custom button nav-tab*/ 
+button.active{
+    background-color: #35a22c !important;
+    color: #fff !important;
+}
+
+.nav-item button {
+    border: 1px solid green !important;
+   
+}
+
+.project-item {
+    animation: scale-product 0.8s;
+}
+
+
 
 @keyframes fadeUp {
     from {
