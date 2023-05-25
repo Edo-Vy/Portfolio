@@ -149,6 +149,87 @@ button.active{
 }
 
 
+/* available */
+.available{
+    background: url(../images/3.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 700px;
+    background-attachment: fixed;
+}
+.available .container-custom {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    min-height: 700px;
+}
+.available .card {
+    background: rgba(255,255,255,.1);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,.1);
+}
+
+.available .card:hover {
+    background: rgba(255,255,255,.05);
+    border: 1px solid #fff;
+    transition: all 0.5s;
+
+}
+
+/* achievement */
+.achievement {
+    min-height: 400px;
+    background:  url(../images/memphis_3.png);
+    background-size:35% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.achievement .card {
+    background: rgba(255,255,255,.5);
+}
+
+/* footer */
+footer {
+    min-height: 200px;
+}
+.footer-top {
+    position: relative;
+    width: 100%;
+   
+
+}
+.footer-top i {
+    margin: 0 4px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    border: 1px solid #454545;
+    transition: all .5s;
+}
+
+.footer-top i:hover {
+    border-color: #35a22c;
+    color: #35a22c;
+}
+
+.footer-top::after {
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255,255,255,.2);
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #fff;
+}
 
 @keyframes fadeUp {
     from {
